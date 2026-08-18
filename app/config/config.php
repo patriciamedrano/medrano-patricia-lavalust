@@ -52,7 +52,7 @@ require_once APP_DIR . 'config/middleware.php';
 |--------------------------------------------------------------------------
 
 */
-$config['base_url'] = 'http://127.0.0.1/LavaLust/';
+$config['base_url'] = 'https://medrano-patricia.onrender.com';
 /*
 |--------------------------------------------------------------------------
 | Static File Proxies
@@ -65,7 +65,7 @@ $config['proxy_enabled'] = FALSE;
 | Index File
 |--------------------------------------------------------------------------
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
