@@ -18,7 +18,10 @@ class StudentController extends Controller
             'course'     => 'BS Information Technology',
             'year'       => '3rd Year',
             'section'    => 'F5',
-            'email'      => 'patriciamedrano502@gmail.com'
+            'email'      => 'patriciamedrano502@gmail.com',
+            'school'     => 'Mindoro State University',
+            'address'    => 'Adrialuna, Naujan, Oriental Mindoro',
+            'hobbies'    => 'Music, Reading'
         ];
 
         $this->call->view('student_home', $student);
@@ -32,7 +35,10 @@ class StudentController extends Controller
             'course'     => 'BS Information Technology',
             'year'       => '3rd Year',
             'section'    => 'F5',
-            'email'      => 'patriciamedrano502@gmail.com'
+            'email'      => 'patriciamedrano502@gmail.com',
+            'school'     => 'Mindoro State University',
+            'address'    => 'Adrialuna, Naujan, Oriental Mindoro',
+            'hobbies'    => 'Music, Reading'
         ];
 
         $this->call->view('student_profile', $student);

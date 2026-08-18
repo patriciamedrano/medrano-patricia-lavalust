@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Patricia G. Medrano | Student Hub</title>
+    <title>Patricia G. Medrano | Academic Profile</title>
 
     <style>
         * {
@@ -146,7 +147,7 @@
             font-size: 15px;
         }
 
-        .email {
+        .full {
             grid-column: 1 / -1;
         }
 
@@ -167,11 +168,6 @@
             color: #08111f;
         }
 
-        .secondary {
-            border: 1px solid #5ee7ff;
-            color: #5ee7ff;
-        }
-
         .buttons a:hover {
             opacity: 0.8;
         }
@@ -184,6 +180,7 @@
         }
 
         @media (max-width: 750px) {
+
             .main-card {
                 grid-template-columns: 1fr;
             }
@@ -192,7 +189,7 @@
                 grid-template-columns: 1fr;
             }
 
-            .email {
+            .full {
                 grid-column: auto;
             }
 
@@ -210,33 +207,54 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">ACADEMIC PROFILE</div>
+
+        <div class="logo">
+            ACADEMIC PROFILE
+        </div>
 
         <div>
-            <a class="nav-link" href="<?= site_url('student') ?>">Home</a>
-            <a class="nav-link" href="<?= site_url('student/profile') ?>">Profile</a>
+            <a class="nav-link" href="<?= site_url('student') ?>">
+                Home
+            </a>
+
+            <a class="nav-link" href="<?= site_url('student/profile') ?>">
+                Profile
+            </a>
         </div>
+
     </nav>
 
+
     <section class="hero">
+
         <small>STUDENT INFORMATION</small>
 
         <h1>Welcome, Patricia.</h1>
 
-        
+        <p>
+            Welcome to my academic profile and student information page.
+        </p>
+
     </section>
+
 
     <section class="main-card">
 
+
         <div class="profile-side">
 
-            <div class="avatar">PM</div>
+            <div class="avatar">
+                PM
+            </div>
 
             <h2><?= $name ?></h2>
 
             <p><?= $course ?></p>
+
             <p><?= $year ?></p>
+
             <p>Section <?= $section ?></p>
+
 
             <div class="student-id">
                 <?= $student_id ?>
@@ -244,44 +262,97 @@
 
         </div>
 
+
         <div class="information">
 
             <h2>Student Details</h2>
 
+
             <div class="grid">
 
+
                 <div class="info-box">
+
                     <span>Full Name</span>
+
                     <strong><?= $name ?></strong>
+
                 </div>
 
+
                 <div class="info-box">
+
                     <span>Course</span>
+
                     <strong><?= $course ?></strong>
+
                 </div>
 
+
                 <div class="info-box">
+
                     <span>Year Level</span>
+
                     <strong><?= $year ?></strong>
+
                 </div>
+
 
                 <div class="info-box">
+
                     <span>Section</span>
+
                     <strong><?= $section ?></strong>
+
                 </div>
 
-                <div class="info-box email">
-                    <span>Email Address</span>
-                    <strong><?= $email ?></strong>
+
+                <div class="info-box">
+
+                    <span>School</span>
+
+                    <strong><?= $school ?></strong>
+
                 </div>
+
+
+                <div class="info-box">
+
+                    <span>Hobbies</span>
+
+                    <strong><?= $hobbies ?></strong>
+
+                </div>
+
+
+                <div class="info-box full">
+
+                    <span>Address</span>
+
+                    <strong><?= $address ?></strong>
+
+                </div>
+
+
+                <div class="info-box full">
+
+                    <span>Email Address</span>
+
+                    <strong><?= $email ?></strong>
+
+                </div>
+
 
             </div>
+
 
             <div class="buttons">
 
                 <a class="primary"
                    href="<?= site_url('student/profile') ?>">
+
                     View Full Profile
+
                 </a>
 
             </div>
@@ -290,9 +361,13 @@
 
     </section>
 
+
     <div class="footer">
+
         Patricia G. Medrano · BS Information Technology
+
     </div>
 
 </body>
+
 </html>

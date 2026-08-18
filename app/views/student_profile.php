@@ -126,7 +126,7 @@
             font-size: 15px;
         }
 
-        .email {
+        .full {
             grid-column: 1 / -1;
         }
 
@@ -158,7 +158,7 @@
                 grid-template-columns: 1fr;
             }
 
-            .email {
+            .full {
                 grid-column: auto;
             }
 
@@ -187,6 +187,7 @@
     <div class="container">
 
         <div class="heading">
+
             <small>MY PROFILE</small>
 
             <h1>Student Information</h1>
@@ -194,6 +195,7 @@
             <p>
                 Personal information and academic details.
             </p>
+
         </div>
 
         <div class="profile-card">
@@ -205,53 +207,107 @@
                 </div>
 
                 <div>
+
                     <h2><?= $name ?></h2>
 
                     <p><?= $course ?></p>
 
                     <p><?= $year ?> · Section <?= $section ?></p>
+
                 </div>
 
             </div>
+
 
             <div class="details">
 
                 <div class="detail">
+
                     <span>Student ID</span>
+
                     <strong><?= $student_id ?></strong>
+
                 </div>
 
+
                 <div class="detail">
+
                     <span>Full Name</span>
+
                     <strong><?= $name ?></strong>
+
                 </div>
 
+
                 <div class="detail">
+
                     <span>Course</span>
+
                     <strong><?= $course ?></strong>
+
                 </div>
 
+
                 <div class="detail">
+
                     <span>Year Level</span>
+
                     <strong><?= $year ?></strong>
+
                 </div>
+
 
                 <div class="detail">
+
                     <span>Section</span>
+
                     <strong><?= $section ?></strong>
+
                 </div>
 
-                <div class="detail email">
+
+                <div class="detail">
+
+                    <span>School</span>
+
+                    <strong><?= $school ?></strong>
+
+                </div>
+
+
+                <div class="detail full">
+
+                    <span>Address</span>
+
+                    <strong><?= $address ?></strong>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span>Hobbies</span>
+
+                    <strong><?= $hobbies ?></strong>
+
+                </div>
+
+
+                <div class="detail">
+
                     <span>Email Address</span>
+
                     <strong><?= $email ?></strong>
+
                 </div>
 
             </div>
 
+
             <div class="back">
 
                 <a href="<?= site_url('student') ?>">
-                    Back to Home
+                    ← Back to Home
                 </a>
 
             </div>
