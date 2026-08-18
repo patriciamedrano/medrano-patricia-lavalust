@@ -224,7 +224,7 @@
     <nav class="navbar">
 
         <div class="logo">
-            MY ACADEMIC SPACE
+           To the Student Portal
         </div>
 
         <div>
