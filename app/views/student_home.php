@@ -1,4 +1,3 @@
-```php
 <!DOCTYPE html>
 <html>
 
@@ -490,7 +489,7 @@
                 <a class="primary"
                    href="<?= site_url('student/profile') ?>">
 
-                    View Full Profile →
+                    View Full Profile 
 
                 </a>
 
