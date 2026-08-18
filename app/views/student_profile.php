@@ -382,7 +382,7 @@
             <div class="back">
 
                 <a href="<?= site_url('student') ?>">
-                    ← Back to Home
+                    Back to Home
                 </a>
 
             </div>
