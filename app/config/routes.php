@@ -10,3 +10,5 @@ $router->get('/student/profile', 'StudentController::profile')
        ->middleware('student');
 
 $router->get('/users', 'UsersController::index');
+
+$router->get('/', 'UsersController::index');
