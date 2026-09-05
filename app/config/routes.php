@@ -11,4 +11,4 @@ $router->get('/student/profile', 'StudentController::profile')
 
 $router->get('/users', 'UsersController::index');
 
-$router->get('/', 'UsersController::index');
+$router->get('/', 'StudentController::index');
