@@ -11,4 +11,8 @@ $router->get('/student/profile', 'StudentController::profile')
 
 $router->get('/users', 'UsersController::index');
 
-$router->get('/', 'StudentController::index');
+if (getenv('APP_SERVICE') === 'users') {
+    $router->get('/', 'UsersController::index');
+} else {
+    $router->get('/', 'StudentController::index');
+}
